@@ -7,7 +7,7 @@ from groq import Groq
 client = Groq(api_key = os.environ["GROQ_API_KEY"])
 
 # page config
-st.set_page_config(page_title="schbot")
+st.set_page_config(page_title="bot-gpt")
 
 if 'chats' not in st.session_state:
     st.session_state.chats = []
@@ -19,7 +19,7 @@ if 'disclaimer_finish' not in st.session_state:
     st.session_state.disclaimer_finish = False
 
 # Title
-st.title("schbot")
+st.title("bot-gpt")
 
 # DISCLAIMER SCREEN
 if not st.session_state.disclaimer_finish:
